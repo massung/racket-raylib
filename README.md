@@ -18,5 +18,6 @@ It's expected that you know [Raylib][raylib] and know the types, functions, etc.
 
 
 
-[csfml]: https://www.raylib.com/
+[raylib]: https://www.raylib.com/
+[racket]: https://racket-lang.org/
 [examples]: https://github.com/massung/racket-raylib/tree/main/examples
