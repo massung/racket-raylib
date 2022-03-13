@@ -21,5 +21,5 @@ All rights reserved.
 (define-ffi-definer define-raylib
   (ffi-lib (case (system-type 'os)
              ('windows "raylib.dll")
-             ('unix "libraylib.so.4.0.0")
+             ('unix "libraylib.4.0.0.so")
              ('macosx "libraylib.4.0.0.dylib"))))
