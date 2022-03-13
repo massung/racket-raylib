@@ -1388,10 +1388,10 @@ All rights reserved.
   (_fun _Sound _pointer _int -> _void))
 
 (define-raylib UnloadWave
-  (_fun _Wave -> _void) #:wrap (deallocator))
+  (_fun _Wave -> _void)) ; #:wrap (deallocator))
 
 (define-raylib UnloadSound
-  (_fun _Sound -> _void) #:wrap (deallocator))
+  (_fun _Sound -> _void)) ; #:wrap (deallocator))
 
 (define-raylib ExportWave
   (_fun _Wave _path -> _bool))
@@ -1419,7 +1419,7 @@ All rights reserved.
   (_fun _Sound -> _void))
 
 (define-raylib StopSoundMulti
-  (_fun _Sound -> _void))
+  (_fun -> _void))
 
 (define-raylib GetSoundsPlaying
   (_fun -> _int))
@@ -1462,7 +1462,7 @@ All rights reserved.
   (_fun _string _pointer _int -> _Music))
 
 (define-raylib UnloadMusicStream
-  (_fun _Music -> _void) #:wrap (deallocator))
+  (_fun _Music -> _void)) ; #:wrap (deallocator))
 
 (define-raylib PlayMusicStream
   (_fun _Music -> _void))
